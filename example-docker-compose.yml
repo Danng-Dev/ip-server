@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  ip-app:
+    build: .
+    ports:
+      - "5252:5252"
+    environment:
+      - PORT=5252
+    restart: unless-stopped
